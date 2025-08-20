@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, textarea, button {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navigation */
+header {
+  background: #0d1b2a;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Hero */
+.hero {
+  background: #1b263b;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  background: #e63946;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Services */
+.services {
+  background: #f1f1f1;
+  padding: 60px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* About */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.btn {
+  background: #1d3557;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
